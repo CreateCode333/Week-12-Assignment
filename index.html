@@ -1,0 +1,51 @@
+<!-- The Week 12 assignment is to:
+Create a CRD application (CRUD without update) using json-server or another API
+Use fetch and async/await to interact with the API
+Use a form to create/post new entities
+Build a way for users to delete entities
+Include a way to get entities from the API and display them
+You do NOT need update, but you can add it if you'd like
+Use Bootstrap and/or CSS to style your project  
+Below is the HTML code for this assignment-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRD Application</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .card {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <h2 class="mb-4">CRD Application</h2>
+
+    <!-- Belos is the code that creates a Form to add a new task -->
+    <form id="taskForm">
+      <div class="form-group">
+        <label for="taskTitle">New Task:</label>
+        <input type="text" class="form-control" id="taskTitle" required>
+      </div>
+      <button type="submit" class="btn btn-success">Add Task</button>
+    </form>
+
+    <hr>
+
+    <!-- Task List -->
+    <div id="taskList"></div>
+  </div>
+
+  <!-- Below are the URL's that source the JavaScript  -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- The code below links to the JavaScript file app.js -->
+  <script src="app.js"></script>
+</body>
+</html>
